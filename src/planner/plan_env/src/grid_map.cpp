@@ -41,7 +41,7 @@ void GridMap::initMap(rclcpp::Node::SharedPtr node)
   node_->declare_parameter("grid_map/virtual_ceil_yn", -0.1);
   node_->declare_parameter("grid_map/show_occ_time", false);
   node_->declare_parameter("grid_map/pose_type", 1);
-  node_->declare_parameter("grid_map/frame_id", "world");
+  node_->declare_parameter("grid_map/frame_id", "map");
   node_->declare_parameter("grid_map/local_map_margin", 1);
   node_->declare_parameter("grid_map/ground_height", 1.0);
   node_->declare_parameter("grid_map/odom_depth_timeout", 1.0);
@@ -818,10 +818,16 @@ void GridMap::cloudCallback(const sensor_msgs::msg::PointCloud2::ConstPtr &img)
   }
 
   if (latest_cloud.points.size() == 0)
+  {
+    std::cout << "cloud is empty!" << std::endl;
     return;
+  }
 
   if (isnan(md_.camera_pos_(0)) || isnan(md_.camera_pos_(1)) || isnan(md_.camera_pos_(2)))
+  {
+    std::cout << "camera_pos is nan!" << std::endl;
     return;
+  }
 
   this->resetBuffer(md_.camera_pos_ - mp_.local_update_range_,
                     md_.camera_pos_ + mp_.local_update_range_);

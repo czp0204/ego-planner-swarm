@@ -347,6 +347,7 @@ namespace ego_planner
     return true;
   }
 
+  // 仅应急停车：生成“原地不动”的 B‐样条给 FSM 发布
   bool EGOPlannerManager::EmergencyStop(Eigen::Vector3d stop_pos)
   {
     Eigen::MatrixXd control_points(3, 6);
@@ -359,7 +360,7 @@ namespace ego_planner
 
     return true;
   }
-
+ // 判断与某一路径是否碰撞（Swarm 模式下）
   bool EGOPlannerManager::checkCollision(int drone_id)
   {
     // if (local_data_.start_time_.toSec() < 1e9) // It means my first planning has not started
@@ -384,7 +385,7 @@ namespace ego_planner
 
     return false;
   }
-
+ // 基于一系列预设航点生成全局多段多项式轨迹
   bool EGOPlannerManager::planGlobalTrajWaypoints(const Eigen::Vector3d &start_pos, const Eigen::Vector3d &start_vel, const Eigen::Vector3d &start_acc,
                                                   const std::vector<Eigen::Vector3d> &waypoints, const Eigen::Vector3d &end_vel, const Eigen::Vector3d &end_acc)
   {
@@ -459,7 +460,7 @@ namespace ego_planner
 
     return true;
   }
-
+  // 简化版：只用起点和终点生成全局多段多项式轨迹
   bool EGOPlannerManager::planGlobalTraj(const Eigen::Vector3d &start_pos, const Eigen::Vector3d &start_vel, const Eigen::Vector3d &start_acc,
                                          const Eigen::Vector3d &end_pos, const Eigen::Vector3d &end_vel, const Eigen::Vector3d &end_acc)
   {
@@ -526,7 +527,7 @@ namespace ego_planner
 
     return true;
   }
-
+// 进一步精细化：在优化后若轨迹仍超限，用 Ceres 在 B-样条上做时间重分配再优化
   bool EGOPlannerManager::refineTrajAlgo(UniformBspline &traj, vector<Eigen::Vector3d> &start_end_derivative, double ratio, double &ts, Eigen::MatrixXd &optimal_control_points)
   {
     double t_inc;

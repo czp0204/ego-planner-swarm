@@ -1,0 +1,662 @@
+[0.000000] (-) TimerEvent: {}
+[0.000347] (-) JobUnselected: {'identifier': 'bspline_opt'}
+[0.000365] (-) JobUnselected: {'identifier': 'cmake_utils'}
+[0.000374] (-) JobUnselected: {'identifier': 'drone_detect'}
+[0.000382] (-) JobUnselected: {'identifier': 'ego_planner'}
+[0.000389] (-) JobUnselected: {'identifier': 'local_sensing'}
+[0.000396] (-) JobUnselected: {'identifier': 'map_generator'}
+[0.000404] (-) JobUnselected: {'identifier': 'mockamap'}
+[0.000411] (-) JobUnselected: {'identifier': 'multi_map_server'}
+[0.000418] (-) JobUnselected: {'identifier': 'odom_visualization'}
+[0.000425] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000433] (-) JobUnselected: {'identifier': 'poscmd_2_odom'}
+[0.000440] (-) JobUnselected: {'identifier': 'pose_utils'}
+[0.000447] (-) JobUnselected: {'identifier': 'quadrotor_msgs'}
+[0.000455] (-) JobUnselected: {'identifier': 'rosmsg_tcp_bridge'}
+[0.000462] (-) JobUnselected: {'identifier': 'so3_control'}
+[0.000468] (-) JobUnselected: {'identifier': 'so3_quadrotor_simulator'}
+[0.000476] (-) JobUnselected: {'identifier': 'traj_utils'}
+[0.000483] (-) JobUnselected: {'identifier': 'uav_utils'}
+[0.000490] (-) JobUnselected: {'identifier': 'waypoint_generator'}
+[0.000499] (plan_env) JobQueued: {'identifier': 'plan_env', 'dependencies': OrderedDict()}
+[0.000510] (plan_env) JobStarted: {'identifier': 'plan_env'}
+[0.007165] (plan_env) JobProgress: {'identifier': 'plan_env', 'progress': 'cmake'}
+[0.007443] (plan_env) Command: {'cmd': ['/usr/bin/cmake', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env'], 'cwd': '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('USER', 'zhz'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/cursor/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhz/ir100slam/install/bspline_opt/lib:/home/zhz/ir100slam/install/traj_utils/lib:/home/zhz/ir100slam/install/trac_ik_kinematics/lib:/home/zhz/ir100slam/install/trac_ik_lib/lib:/home/zhz/ir100slam/install/so3_control/lib:/home/zhz/ir100slam/install/shelf_dection/lib:/home/zhz/ir100slam/install/infinity_slider_hardware/lib:/home/zhz/ir100slam/install/infinity_head_hardware/lib:/home/zhz/ir100slam/install/robot_msgs/lib:/home/zhz/ir100slam/install/realsense2_camera/lib:/home/zhz/ir100slam/install/realsense2_camera_msgs/lib:/home/zhz/ir100slam/install/multi_map_server/lib:/home/zhz/ir100slam/install/quadrotor_msgs/lib:/home/zhz/ir100slam/install/pose_utils/lib:/home/zhz/ir100slam/install/path_searching/lib:/home/zhz/ir100slam/install/plan_env/lib:/home/zhz/ir100slam/install/livox_sdk2/lib:/home/zhz/ir100slam/install/livox_ros_driver2/lib:/home/zhz/ir100slam/install/interface/lib:/home/zhz/ir100slam/install/fairino_hardware/lib:/home/zhz/ir100slam/install/fairino_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhz'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/zhz/ir100slam'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'head -n 10000 | cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/cursor/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/cursor/cursor'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1670'), ('BUNDLED_DEBUGPY_PATH', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/zhz/ir100slam/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhz'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zhz/.local/bin:/home/zhz/.local/bin:/opt/ros/humble/bin:/home/zhz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhz/.config/Cursor/User/globalStorage/github.copilot-chat/debugCommand:/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zhz-MS-Challenger-H610M-N-WIFI:@/tmp/.ICE-unix/1639,unix/zhz-MS-Challenger-H610M-N-WIFI:/tmp/.ICE-unix/1639'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/29903999_9ee3_4d0a_9e00_1690a7099370'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-93d09af961603fe3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1RIP72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e239beb384.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('CURSOR_TRACE_ID', '23675c6f668b4d6c91af2749a091b639'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/controller_node:/home/zhz/ir100slam/install/cmake_utils:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env'), ('QT_QPA_PLATFORM', 'xcb'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhz/ir100slam/install/traj_utils/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/perception_nodes/.:/home/zhz/ir100slam/install/perception_nodes/lib/python3.10/site-packages:/home/zhz/ir100slam/install/robot_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/multi_map_server/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/planning_control:/home/zhz/ir100slam/install/planning_control/lib/python3.10/site-packages:/home/zhz/ir100slam/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/interface/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/fairino_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/fairino_description:/home/zhz/ir100slam/install/fairino_description/lib/python3.10/site-packages:/home/zhz/ir100slam/build/controller_node:/home/zhz/ir100slam/install/controller_node/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/cmake_utils:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/controller_node:/opt/ros/humble')]), 'shell': False}
+[0.049243] (plan_env) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087623] (plan_env) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.092890] (plan_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099839] (-) TimerEvent: {}
+[0.138056] (plan_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.142650] (plan_env) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.142936] (plan_env) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.143426] (plan_env) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.145584] (plan_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.197963] (plan_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.199903] (-) TimerEvent: {}
+[0.205422] (plan_env) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.205599] (plan_env) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.205908] (plan_env) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.210373] (plan_env) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300002] (-) TimerEvent: {}
+[0.329228] (plan_env) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400109] (-) TimerEvent: {}
+[0.426741] (plan_env) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.480801] (plan_env) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.488936] (plan_env) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.498788] (plan_env) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.500194] (-) TimerEvent: {}
+[0.512235] (plan_env) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.530649] (plan_env) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.582920] (plan_env) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.587888] (plan_env) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.600289] (-) TimerEvent: {}
+[0.615772] (plan_env) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.628324] (plan_env) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.674607] (plan_env) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.674759] (plan_env) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700400] (-) TimerEvent: {}
+[0.721713] (plan_env) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.722558] (plan_env) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.775705] (plan_env) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.779269] (plan_env) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.800512] (-) TimerEvent: {}
+[0.822575] (plan_env) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.836024] (plan_env) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.848042] (plan_env) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.852031] (plan_env) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[0.869816] (plan_env) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.880145] (plan_env) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.898925] (plan_env) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.898989] (plan_env) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.900598] (-) TimerEvent: {}
+[0.931081] (plan_env) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.943636] (plan_env) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.954209] (plan_env) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.984456] (plan_env) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.984568] (plan_env) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.000686] (-) TimerEvent: {}
+[1.011386] (plan_env) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.016925] (plan_env) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.100781] (-) TimerEvent: {}
+[1.107902] (plan_env) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.108033] (plan_env) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.110100] (plan_env) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.117606] (plan_env) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.130614] (plan_env) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.141367] (plan_env) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.200862] (-) TimerEvent: {}
+[1.212675] (plan_env) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.212792] (plan_env) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.261056] (plan_env) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.261177] (plan_env) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.300970] (-) TimerEvent: {}
+[1.306841] (plan_env) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.306966] (plan_env) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.350744] (plan_env) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.350865] (plan_env) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.395652] (plan_env) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.395794] (plan_env) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.401052] (-) TimerEvent: {}
+[1.442649] (plan_env) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.442823] (plan_env) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.487893] (plan_env) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.501155] (-) TimerEvent: {}
+[1.544251] (plan_env) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.545725] (plan_env) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.547422] (plan_env) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.548722] (plan_env) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.557126] (plan_env) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.561596] (plan_env) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.564145] (plan_env) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.568039] (plan_env) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.601263] (-) TimerEvent: {}
+[1.627110] (plan_env) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.636825] (plan_env) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.658967] (plan_env) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.659622] (plan_env) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.659681] (plan_env) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.696205] (plan_env) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.696355] (plan_env) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.696397] (plan_env) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.701357] (-) TimerEvent: {}
+[1.801550] (-) TimerEvent: {}
+[1.808675] (plan_env) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.813097] (plan_env) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.817284] (plan_env) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.901625] (-) TimerEvent: {}
+[1.927324] (plan_env) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.001705] (-) TimerEvent: {}
+[2.038375] (plan_env) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.101801] (-) TimerEvent: {}
+[2.156152] (plan_env) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.156748] (plan_env) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.156839] (plan_env) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.157392] (plan_env) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.157470] (plan_env) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.158020] (plan_env) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.158084] (plan_env) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.158583] (plan_env) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.158642] (plan_env) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.159178] (plan_env) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.159239] (plan_env) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.159698] (plan_env) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.159807] (plan_env) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.159943] (plan_env) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.160044] (plan_env) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.160177] (plan_env) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.160237] (plan_env) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.160788] (plan_env) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.160912] (plan_env) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.161459] (plan_env) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.161552] (plan_env) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.162053] (plan_env) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.162106] (plan_env) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.162622] (plan_env) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.162776] (plan_env) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.163290] (plan_env) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.163404] (plan_env) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.163961] (plan_env) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.164057] (plan_env) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.164584] (plan_env) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.164702] (plan_env) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.165238] (plan_env) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.165344] (plan_env) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.165869] (plan_env) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.165960] (plan_env) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.166482] (plan_env) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.166636] (plan_env) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.167139] (plan_env) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.167220] (plan_env) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.167709] (plan_env) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.168080] (plan_env) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.168207] (plan_env) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.168278] (plan_env) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.168428] (plan_env) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.168491] (plan_env) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.168691] (plan_env) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.168758] (plan_env) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.169330] (plan_env) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.169425] (plan_env) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.169961] (plan_env) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.170468] (plan_env) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[2.174444] (plan_env) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.194951] (plan_env) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.201867] (-) TimerEvent: {}
+[2.302056] (-) TimerEvent: {}
+[2.316145] (plan_env) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.316440] (plan_env) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include\n'}
+[2.316478] (plan_env) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.317322] (plan_env) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.318353] (plan_env) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.318389] (plan_env) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.318985] (plan_env) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.321168] (plan_env) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.350542] (plan_env) StdoutLine: {'line': b'-- Generating done\n'}
+[2.359769] (plan_env) StdoutLine: {'line': b'-- Build files have been written to: /home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env\n'}
+[2.370176] (plan_env) CommandEnded: {'returncode': 0}
+[2.370702] (plan_env) JobProgress: {'identifier': 'plan_env', 'progress': 'build'}
+[2.371295] (plan_env) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env', '--', '-j12', '-l12'], 'cwd': '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('USER', 'zhz'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/cursor/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhz/ir100slam/install/bspline_opt/lib:/home/zhz/ir100slam/install/traj_utils/lib:/home/zhz/ir100slam/install/trac_ik_kinematics/lib:/home/zhz/ir100slam/install/trac_ik_lib/lib:/home/zhz/ir100slam/install/so3_control/lib:/home/zhz/ir100slam/install/shelf_dection/lib:/home/zhz/ir100slam/install/infinity_slider_hardware/lib:/home/zhz/ir100slam/install/infinity_head_hardware/lib:/home/zhz/ir100slam/install/robot_msgs/lib:/home/zhz/ir100slam/install/realsense2_camera/lib:/home/zhz/ir100slam/install/realsense2_camera_msgs/lib:/home/zhz/ir100slam/install/multi_map_server/lib:/home/zhz/ir100slam/install/quadrotor_msgs/lib:/home/zhz/ir100slam/install/pose_utils/lib:/home/zhz/ir100slam/install/path_searching/lib:/home/zhz/ir100slam/install/plan_env/lib:/home/zhz/ir100slam/install/livox_sdk2/lib:/home/zhz/ir100slam/install/livox_ros_driver2/lib:/home/zhz/ir100slam/install/interface/lib:/home/zhz/ir100slam/install/fairino_hardware/lib:/home/zhz/ir100slam/install/fairino_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhz'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/zhz/ir100slam'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'head -n 10000 | cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/cursor/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/cursor/cursor'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1670'), ('BUNDLED_DEBUGPY_PATH', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/zhz/ir100slam/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhz'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zhz/.local/bin:/home/zhz/.local/bin:/opt/ros/humble/bin:/home/zhz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhz/.config/Cursor/User/globalStorage/github.copilot-chat/debugCommand:/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zhz-MS-Challenger-H610M-N-WIFI:@/tmp/.ICE-unix/1639,unix/zhz-MS-Challenger-H610M-N-WIFI:/tmp/.ICE-unix/1639'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/29903999_9ee3_4d0a_9e00_1690a7099370'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-93d09af961603fe3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1RIP72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e239beb384.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('CURSOR_TRACE_ID', '23675c6f668b4d6c91af2749a091b639'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/controller_node:/home/zhz/ir100slam/install/cmake_utils:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env'), ('QT_QPA_PLATFORM', 'xcb'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhz/ir100slam/install/traj_utils/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/perception_nodes/.:/home/zhz/ir100slam/install/perception_nodes/lib/python3.10/site-packages:/home/zhz/ir100slam/install/robot_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/multi_map_server/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/planning_control:/home/zhz/ir100slam/install/planning_control/lib/python3.10/site-packages:/home/zhz/ir100slam/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/interface/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/fairino_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/fairino_description:/home/zhz/ir100slam/install/fairino_description/lib/python3.10/site-packages:/home/zhz/ir100slam/build/controller_node:/home/zhz/ir100slam/install/controller_node/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/cmake_utils:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/controller_node:/opt/ros/humble')]), 'shell': False}
+[2.402153] (-) TimerEvent: {}
+[2.406321] (plan_env) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/obj_generator.dir/src/obj_generator.cpp.o\x1b[0m\n'}
+[2.406461] (plan_env) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/plan_env.dir/src/obj_predictor.cpp.o\x1b[0m\n'}
+[2.406519] (plan_env) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/plan_env.dir/src/raycast.cpp.o\x1b[0m\n'}
+[2.406564] (plan_env) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/plan_env.dir/src/grid_map.cpp.o\x1b[0m\n'}
+[2.502245] (-) TimerEvent: {}
+[2.602484] (-) TimerEvent: {}
+[2.702799] (-) TimerEvent: {}
+[2.803046] (-) TimerEvent: {}
+[2.903277] (-) TimerEvent: {}
+[3.003505] (-) TimerEvent: {}
+[3.107627] (-) TimerEvent: {}
+[3.207887] (-) TimerEvent: {}
+[3.308150] (-) TimerEvent: {}
+[3.408403] (-) TimerEvent: {}
+[3.508639] (-) TimerEvent: {}
+[3.608887] (-) TimerEvent: {}
+[3.709150] (-) TimerEvent: {}
+[3.809381] (-) TimerEvent: {}
+[3.909618] (-) TimerEvent: {}
+[4.009825] (-) TimerEvent: {}
+[4.110058] (-) TimerEvent: {}
+[4.210287] (-) TimerEvent: {}
+[4.310522] (-) TimerEvent: {}
+[4.410738] (-) TimerEvent: {}
+[4.510971] (-) TimerEvent: {}
+[4.611208] (-) TimerEvent: {}
+[4.641810] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:45:85:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.641953] (plan_env) StderrLine: {'line': b'   45 |   void ObjHistory::poseCallback(const geometry_msgs::msg::PoseStamped::ConstPtr &msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[4.641993] (plan_env) StderrLine: {'line': b'      |                                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.642032] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[4.642065] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/obj_predictor.h:29\x1b[m\x1b[K,\n'}
+[4.642096] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:24\x1b[m\x1b[K:\n'}
+[4.642121] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.642147] (plan_env) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[4.642173] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.643960] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid fast_planner::ObjHistory::poseCallback(const ConstPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.643996] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:58:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::list<Eigen::Matrix<double, 4, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.644033] (plan_env) StderrLine: {'line': b'   58 |     if (\x1b[01;35m\x1b[Khistory_.size() > queue_size_\x1b[m\x1b[K)\n'}
+[4.644059] (plan_env) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.711316] (-) TimerEvent: {}
+[4.789933] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.790063] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:203:89:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvisualization_msgs::msg::Marker_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.790108] (plan_env) StderrLine: {'line': b'  203 |   void ObjPredictor::markerCallback(const visualization_msgs::msg::Marker::ConstPtr &msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[4.790138] (plan_env) StderrLine: {'line': b'      |                                                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.790164] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp:7\x1b[m\x1b[K,\n'}
+[4.790191] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/obj_predictor.h:33\x1b[m\x1b[K,\n'}
+[4.790216] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/obj_predictor.cpp:24\x1b[m\x1b[K:\n'}
+[4.790241] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:364:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.790266] (plan_env) StderrLine: {'line': b'  364 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[4.790291] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.811426] (-) TimerEvent: {}
+[4.911648] (-) TimerEvent: {}
+[5.011872] (-) TimerEvent: {}
+[5.112094] (-) TimerEvent: {}
+[5.212322] (-) TimerEvent: {}
+[5.312548] (-) TimerEvent: {}
+[5.412773] (-) TimerEvent: {}
+[5.513040] (-) TimerEvent: {}
+[5.613269] (-) TimerEvent: {}
+[5.713492] (-) TimerEvent: {}
+[5.813737] (-) TimerEvent: {}
+[5.913944] (-) TimerEvent: {}
+[6.014170] (-) TimerEvent: {}
+[6.114397] (-) TimerEvent: {}
+[6.214629] (-) TimerEvent: {}
+[6.314838] (-) TimerEvent: {}
+[6.415084] (-) TimerEvent: {}
+[6.515322] (-) TimerEvent: {}
+[6.615555] (-) TimerEvent: {}
+[6.715773] (-) TimerEvent: {}
+[6.816002] (-) TimerEvent: {}
+[6.850065] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:759:86:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.850227] (plan_env) StderrLine: {'line': b'  759 |                                 const geometry_msgs::msg::PoseStamped::ConstPtr &pose\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.850267] (plan_env) StderrLine: {'line': b'      |                                                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.850294] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7\x1b[m\x1b[K,\n'}
+[6.850330] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:40\x1b[m\x1b[K,\n'}
+[6.850357] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:18\x1b[m\x1b[K,\n'}
+[6.850382] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.850407] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.850432] (plan_env) StderrLine: {'line': b'  173 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.850463] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.850494] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:759:86:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.850524] (plan_env) StderrLine: {'line': b'  759 |                                 const geometry_msgs::msg::PoseStamped::ConstPtr &pose\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.850548] (plan_env) StderrLine: {'line': b'      |                                                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.850580] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.850607] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:19\x1b[m\x1b[K,\n'}
+[6.850631] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.850653] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.850678] (plan_env) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.850701] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.856490] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:806:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.856599] (plan_env) StderrLine: {'line': b'  806 | void GridMap::cloudCallback(const sensor_msgs::msg::PointCloud2::ConstPtr &img\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.856629] (plan_env) StderrLine: {'line': b'      |                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.856653] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7\x1b[m\x1b[K,\n'}
+[6.856684] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:59\x1b[m\x1b[K,\n'}
+[6.856708] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:30\x1b[m\x1b[K,\n'}
+[6.856732] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.856756] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.856780] (plan_env) StderrLine: {'line': b'  194 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.856802] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.876328] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1031:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Odometry_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.876463] (plan_env) StderrLine: {'line': b' 1031 | void GridMap::extrinsicCallback(const nav_msgs::msg::Odometry::ConstPtr &odom\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.876501] (plan_env) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.876528] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[6.876554] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:22\x1b[m\x1b[K,\n'}
+[6.876586] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.876612] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:146:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.876638] (plan_env) StderrLine: {'line': b'  146 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.876664] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.886991] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1046:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.887059] (plan_env) StderrLine: {'line': b' 1046 |                                 const nav_msgs::msg::Odometry::ConstPtr &odom\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.887085] (plan_env) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.887109] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7\x1b[m\x1b[K,\n'}
+[6.887133] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:40\x1b[m\x1b[K,\n'}
+[6.887156] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:18\x1b[m\x1b[K,\n'}
+[6.887179] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.887202] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.887225] (plan_env) StderrLine: {'line': b'  173 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.887253] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.887274] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1046:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Odometry_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.887299] (plan_env) StderrLine: {'line': b' 1046 |                                 const nav_msgs::msg::Odometry::ConstPtr &odom\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[6.887322] (plan_env) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.887344] (plan_env) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[6.887365] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/include/plan_env/grid_map.h:22\x1b[m\x1b[K,\n'}
+[6.887387] (plan_env) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zhz/ir100slam/src/ego/ego-planner-swarm/src/planner/plan_env/src/grid_map.cpp:1\x1b[m\x1b[K:\n'}
+[6.887408] (plan_env) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:146:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.887432] (plan_env) StderrLine: {'line': b'  146 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[6.887454] (plan_env) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.916082] (-) TimerEvent: {}
+[7.016318] (-) TimerEvent: {}
+[7.116616] (-) TimerEvent: {}
+[7.216820] (-) TimerEvent: {}
+[7.317025] (-) TimerEvent: {}
+[7.417232] (-) TimerEvent: {}
+[7.517457] (-) TimerEvent: {}
+[7.617682] (-) TimerEvent: {}
+[7.717920] (-) TimerEvent: {}
+[7.818213] (-) TimerEvent: {}
+[7.918446] (-) TimerEvent: {}
+[8.018684] (-) TimerEvent: {}
+[8.118999] (-) TimerEvent: {}
+[8.219228] (-) TimerEvent: {}
+[8.319456] (-) TimerEvent: {}
+[8.419706] (-) TimerEvent: {}
+[8.519939] (-) TimerEvent: {}
+[8.620148] (-) TimerEvent: {}
+[8.720388] (-) TimerEvent: {}
+[8.820604] (-) TimerEvent: {}
+[8.920830] (-) TimerEvent: {}
+[9.021063] (-) TimerEvent: {}
+[9.121315] (-) TimerEvent: {}
+[9.221544] (-) TimerEvent: {}
+[9.321756] (-) TimerEvent: {}
+[9.421997] (-) TimerEvent: {}
+[9.522237] (-) TimerEvent: {}
+[9.622538] (-) TimerEvent: {}
+[9.722772] (-) TimerEvent: {}
+[9.823029] (-) TimerEvent: {}
+[9.923261] (-) TimerEvent: {}
+[10.023490] (-) TimerEvent: {}
+[10.123704] (-) TimerEvent: {}
+[10.223933] (-) TimerEvent: {}
+[10.324172] (-) TimerEvent: {}
+[10.424409] (-) TimerEvent: {}
+[10.524637] (-) TimerEvent: {}
+[10.624887] (-) TimerEvent: {}
+[10.725186] (-) TimerEvent: {}
+[10.825560] (-) TimerEvent: {}
+[10.925787] (-) TimerEvent: {}
+[11.026036] (-) TimerEvent: {}
+[11.036717] (plan_env) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable obj_generator\x1b[0m\n'}
+[11.126128] (-) TimerEvent: {}
+[11.226340] (-) TimerEvent: {}
+[11.291278] (plan_env) StdoutLine: {'line': b'[ 83%] Built target obj_generator\n'}
+[11.326422] (-) TimerEvent: {}
+[11.426639] (-) TimerEvent: {}
+[11.526849] (-) TimerEvent: {}
+[11.627094] (-) TimerEvent: {}
+[11.727317] (-) TimerEvent: {}
+[11.827538] (-) TimerEvent: {}
+[11.927742] (-) TimerEvent: {}
+[12.027966] (-) TimerEvent: {}
+[12.128186] (-) TimerEvent: {}
+[12.228408] (-) TimerEvent: {}
+[12.328635] (-) TimerEvent: {}
+[12.428849] (-) TimerEvent: {}
+[12.529101] (-) TimerEvent: {}
+[12.629320] (-) TimerEvent: {}
+[12.729545] (-) TimerEvent: {}
+[12.829747] (-) TimerEvent: {}
+[12.929976] (-) TimerEvent: {}
+[13.030208] (-) TimerEvent: {}
+[13.130439] (-) TimerEvent: {}
+[13.230638] (-) TimerEvent: {}
+[13.330833] (-) TimerEvent: {}
+[13.431048] (-) TimerEvent: {}
+[13.531269] (-) TimerEvent: {}
+[13.631494] (-) TimerEvent: {}
+[13.731690] (-) TimerEvent: {}
+[13.831908] (-) TimerEvent: {}
+[13.932136] (-) TimerEvent: {}
+[14.032354] (-) TimerEvent: {}
+[14.132569] (-) TimerEvent: {}
+[14.232788] (-) TimerEvent: {}
+[14.333033] (-) TimerEvent: {}
+[14.433258] (-) TimerEvent: {}
+[14.533478] (-) TimerEvent: {}
+[14.633680] (-) TimerEvent: {}
+[14.733915] (-) TimerEvent: {}
+[14.834137] (-) TimerEvent: {}
+[14.934364] (-) TimerEvent: {}
+[15.034653] (-) TimerEvent: {}
+[15.134885] (-) TimerEvent: {}
+[15.235131] (-) TimerEvent: {}
+[15.335364] (-) TimerEvent: {}
+[15.435603] (-) TimerEvent: {}
+[15.535797] (-) TimerEvent: {}
+[15.636018] (-) TimerEvent: {}
+[15.736238] (-) TimerEvent: {}
+[15.836528] (-) TimerEvent: {}
+[15.936834] (-) TimerEvent: {}
+[16.037061] (-) TimerEvent: {}
+[16.137288] (-) TimerEvent: {}
+[16.237580] (-) TimerEvent: {}
+[16.337808] (-) TimerEvent: {}
+[16.438088] (-) TimerEvent: {}
+[16.538307] (-) TimerEvent: {}
+[16.638526] (-) TimerEvent: {}
+[16.738748] (-) TimerEvent: {}
+[16.838959] (-) TimerEvent: {}
+[16.939167] (-) TimerEvent: {}
+[17.039382] (-) TimerEvent: {}
+[17.139613] (-) TimerEvent: {}
+[17.239809] (-) TimerEvent: {}
+[17.340000] (-) TimerEvent: {}
+[17.440216] (-) TimerEvent: {}
+[17.540438] (-) TimerEvent: {}
+[17.640639] (-) TimerEvent: {}
+[17.740835] (-) TimerEvent: {}
+[17.841046] (-) TimerEvent: {}
+[17.941304] (-) TimerEvent: {}
+[18.041533] (-) TimerEvent: {}
+[18.141736] (-) TimerEvent: {}
+[18.241952] (-) TimerEvent: {}
+[18.342175] (-) TimerEvent: {}
+[18.442398] (-) TimerEvent: {}
+[18.542616] (-) TimerEvent: {}
+[18.642837] (-) TimerEvent: {}
+[18.743060] (-) TimerEvent: {}
+[18.843288] (-) TimerEvent: {}
+[18.943509] (-) TimerEvent: {}
+[19.043708] (-) TimerEvent: {}
+[19.143915] (-) TimerEvent: {}
+[19.244128] (-) TimerEvent: {}
+[19.344465] (-) TimerEvent: {}
+[19.444713] (-) TimerEvent: {}
+[19.544982] (-) TimerEvent: {}
+[19.645202] (-) TimerEvent: {}
+[19.745396] (-) TimerEvent: {}
+[19.845609] (-) TimerEvent: {}
+[19.945835] (-) TimerEvent: {}
+[20.046062] (-) TimerEvent: {}
+[20.146289] (-) TimerEvent: {}
+[20.246511] (-) TimerEvent: {}
+[20.346700] (-) TimerEvent: {}
+[20.446919] (-) TimerEvent: {}
+[20.547141] (-) TimerEvent: {}
+[20.647363] (-) TimerEvent: {}
+[20.747586] (-) TimerEvent: {}
+[20.847779] (-) TimerEvent: {}
+[20.948001] (-) TimerEvent: {}
+[21.048200] (-) TimerEvent: {}
+[21.148432] (-) TimerEvent: {}
+[21.248648] (-) TimerEvent: {}
+[21.348864] (-) TimerEvent: {}
+[21.449109] (-) TimerEvent: {}
+[21.549327] (-) TimerEvent: {}
+[21.649620] (-) TimerEvent: {}
+[21.749867] (-) TimerEvent: {}
+[21.850090] (-) TimerEvent: {}
+[21.950319] (-) TimerEvent: {}
+[22.050539] (-) TimerEvent: {}
+[22.150774] (-) TimerEvent: {}
+[22.251002] (-) TimerEvent: {}
+[22.351217] (-) TimerEvent: {}
+[22.451433] (-) TimerEvent: {}
+[22.551714] (-) TimerEvent: {}
+[22.651938] (-) TimerEvent: {}
+[22.752156] (-) TimerEvent: {}
+[22.852354] (-) TimerEvent: {}
+[22.952584] (-) TimerEvent: {}
+[23.052801] (-) TimerEvent: {}
+[23.153021] (-) TimerEvent: {}
+[23.253243] (-) TimerEvent: {}
+[23.353461] (-) TimerEvent: {}
+[23.453636] (-) TimerEvent: {}
+[23.553843] (-) TimerEvent: {}
+[23.654093] (-) TimerEvent: {}
+[23.754374] (-) TimerEvent: {}
+[23.854591] (-) TimerEvent: {}
+[23.954807] (-) TimerEvent: {}
+[24.055035] (-) TimerEvent: {}
+[24.155238] (-) TimerEvent: {}
+[24.255444] (-) TimerEvent: {}
+[24.355701] (-) TimerEvent: {}
+[24.455924] (-) TimerEvent: {}
+[24.556148] (-) TimerEvent: {}
+[24.656365] (-) TimerEvent: {}
+[24.756582] (-) TimerEvent: {}
+[24.856780] (-) TimerEvent: {}
+[24.957002] (-) TimerEvent: {}
+[25.057229] (-) TimerEvent: {}
+[25.157449] (-) TimerEvent: {}
+[25.257634] (-) TimerEvent: {}
+[25.357826] (-) TimerEvent: {}
+[25.458045] (-) TimerEvent: {}
+[25.558259] (-) TimerEvent: {}
+[25.658474] (-) TimerEvent: {}
+[25.758667] (-) TimerEvent: {}
+[25.858862] (-) TimerEvent: {}
+[25.959075] (-) TimerEvent: {}
+[26.059289] (-) TimerEvent: {}
+[26.159498] (-) TimerEvent: {}
+[26.259702] (-) TimerEvent: {}
+[26.359924] (-) TimerEvent: {}
+[26.460143] (-) TimerEvent: {}
+[26.560360] (-) TimerEvent: {}
+[26.660637] (-) TimerEvent: {}
+[26.760848] (-) TimerEvent: {}
+[26.861077] (-) TimerEvent: {}
+[26.961292] (-) TimerEvent: {}
+[27.061496] (-) TimerEvent: {}
+[27.161719] (-) TimerEvent: {}
+[27.261916] (-) TimerEvent: {}
+[27.362159] (-) TimerEvent: {}
+[27.462378] (-) TimerEvent: {}
+[27.562605] (-) TimerEvent: {}
+[27.662805] (-) TimerEvent: {}
+[27.763024] (-) TimerEvent: {}
+[27.863250] (-) TimerEvent: {}
+[27.963466] (-) TimerEvent: {}
+[28.063703] (-) TimerEvent: {}
+[28.163929] (-) TimerEvent: {}
+[28.264155] (-) TimerEvent: {}
+[28.364364] (-) TimerEvent: {}
+[28.464607] (-) TimerEvent: {}
+[28.564815] (-) TimerEvent: {}
+[28.665028] (-) TimerEvent: {}
+[28.765246] (-) TimerEvent: {}
+[28.865470] (-) TimerEvent: {}
+[28.965708] (-) TimerEvent: {}
+[29.065938] (-) TimerEvent: {}
+[29.166152] (-) TimerEvent: {}
+[29.266379] (-) TimerEvent: {}
+[29.366618] (-) TimerEvent: {}
+[29.466827] (-) TimerEvent: {}
+[29.567038] (-) TimerEvent: {}
+[29.667256] (-) TimerEvent: {}
+[29.767474] (-) TimerEvent: {}
+[29.867695] (-) TimerEvent: {}
+[29.967913] (-) TimerEvent: {}
+[30.068140] (-) TimerEvent: {}
+[30.168432] (-) TimerEvent: {}
+[30.268638] (-) TimerEvent: {}
+[30.368841] (-) TimerEvent: {}
+[30.469059] (-) TimerEvent: {}
+[30.569335] (-) TimerEvent: {}
+[30.669561] (-) TimerEvent: {}
+[30.769792] (-) TimerEvent: {}
+[30.870011] (-) TimerEvent: {}
+[30.970236] (-) TimerEvent: {}
+[31.070454] (-) TimerEvent: {}
+[31.170665] (-) TimerEvent: {}
+[31.270906] (-) TimerEvent: {}
+[31.371129] (-) TimerEvent: {}
+[31.471362] (-) TimerEvent: {}
+[31.571584] (-) TimerEvent: {}
+[31.671783] (-) TimerEvent: {}
+[31.771986] (-) TimerEvent: {}
+[31.872224] (-) TimerEvent: {}
+[31.972458] (-) TimerEvent: {}
+[32.072646] (-) TimerEvent: {}
+[32.172857] (-) TimerEvent: {}
+[32.273181] (-) TimerEvent: {}
+[32.373401] (-) TimerEvent: {}
+[32.473633] (-) TimerEvent: {}
+[32.573924] (-) TimerEvent: {}
+[32.674214] (-) TimerEvent: {}
+[32.774487] (-) TimerEvent: {}
+[32.874791] (-) TimerEvent: {}
+[32.975023] (-) TimerEvent: {}
+[33.075247] (-) TimerEvent: {}
+[33.175517] (-) TimerEvent: {}
+[33.275725] (-) TimerEvent: {}
+[33.376016] (-) TimerEvent: {}
+[33.476306] (-) TimerEvent: {}
+[33.576529] (-) TimerEvent: {}
+[33.676816] (-) TimerEvent: {}
+[33.777049] (-) TimerEvent: {}
+[33.877340] (-) TimerEvent: {}
+[33.977558] (-) TimerEvent: {}
+[34.077782] (-) TimerEvent: {}
+[34.178043] (-) TimerEvent: {}
+[34.278266] (-) TimerEvent: {}
+[34.378536] (-) TimerEvent: {}
+[34.478766] (-) TimerEvent: {}
+[34.578987] (-) TimerEvent: {}
+[34.679199] (-) TimerEvent: {}
+[34.779476] (-) TimerEvent: {}
+[34.879681] (-) TimerEvent: {}
+[34.979922] (-) TimerEvent: {}
+[35.080220] (-) TimerEvent: {}
+[35.180534] (-) TimerEvent: {}
+[35.280776] (-) TimerEvent: {}
+[35.381002] (-) TimerEvent: {}
+[35.481293] (-) TimerEvent: {}
+[35.553668] (plan_env) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libplan_env.so\x1b[0m\n'}
+[35.581400] (-) TimerEvent: {}
+[35.681617] (-) TimerEvent: {}
+[35.781832] (-) TimerEvent: {}
+[35.882090] (-) TimerEvent: {}
+[35.982349] (-) TimerEvent: {}
+[36.082591] (-) TimerEvent: {}
+[36.182793] (-) TimerEvent: {}
+[36.283001] (-) TimerEvent: {}
+[36.383277] (-) TimerEvent: {}
+[36.482012] (plan_env) StdoutLine: {'line': b'[100%] Built target plan_env\n'}
+[36.483351] (-) TimerEvent: {}
+[36.491255] (plan_env) CommandEnded: {'returncode': 0}
+[36.491742] (plan_env) JobProgress: {'identifier': 'plan_env', 'progress': 'install'}
+[36.500250] (plan_env) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env'], 'cwd': '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('USER', 'zhz'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/cursor/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zhz/ir100slam/install/bspline_opt/lib:/home/zhz/ir100slam/install/traj_utils/lib:/home/zhz/ir100slam/install/trac_ik_kinematics/lib:/home/zhz/ir100slam/install/trac_ik_lib/lib:/home/zhz/ir100slam/install/so3_control/lib:/home/zhz/ir100slam/install/shelf_dection/lib:/home/zhz/ir100slam/install/infinity_slider_hardware/lib:/home/zhz/ir100slam/install/infinity_head_hardware/lib:/home/zhz/ir100slam/install/robot_msgs/lib:/home/zhz/ir100slam/install/realsense2_camera/lib:/home/zhz/ir100slam/install/realsense2_camera_msgs/lib:/home/zhz/ir100slam/install/multi_map_server/lib:/home/zhz/ir100slam/install/quadrotor_msgs/lib:/home/zhz/ir100slam/install/pose_utils/lib:/home/zhz/ir100slam/install/path_searching/lib:/home/zhz/ir100slam/install/plan_env/lib:/home/zhz/ir100slam/install/livox_sdk2/lib:/home/zhz/ir100slam/install/livox_ros_driver2/lib:/home/zhz/ir100slam/install/interface/lib:/home/zhz/ir100slam/install/fairino_hardware/lib:/home/zhz/ir100slam/install/fairino_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhz'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/zhz/ir100slam'), ('DISABLE_AUTO_UPDATE', 'true'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'head -n 10000 | cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/cursor/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/cursor/cursor'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1670'), ('BUNDLED_DEBUGPY_PATH', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/zhz/ir100slam/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zhz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhz'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/zhz/.local/bin:/home/zhz/.local/bin:/opt/ros/humble/bin:/home/zhz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhz/.config/Cursor/User/globalStorage/github.copilot-chat/debugCommand:/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zhz-MS-Challenger-H610M-N-WIFI:@/tmp/.ICE-unix/1639,unix/zhz-MS-Challenger-H610M-N-WIFI:/tmp/.ICE-unix/1639'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/29903999_9ee3_4d0a_9e00_1690a7099370'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zhz/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-93d09af961603fe3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1RIP72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e239beb384.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('CURSOR_TRACE_ID', '23675c6f668b4d6c91af2749a091b639'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/controller_node:/home/zhz/ir100slam/install/cmake_utils:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zhz/ir100slam/src/ego/ego-planner-swarm/build/plan_env'), ('QT_QPA_PLATFORM', 'xcb'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhz/ir100slam/install/traj_utils/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/perception_nodes/.:/home/zhz/ir100slam/install/perception_nodes/lib/python3.10/site-packages:/home/zhz/ir100slam/install/robot_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/multi_map_server/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/quadrotor_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/planning_control:/home/zhz/ir100slam/install/planning_control/lib/python3.10/site-packages:/home/zhz/ir100slam/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/interface/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/install/fairino_msgs/local/lib/python3.10/dist-packages:/home/zhz/ir100slam/build/fairino_description:/home/zhz/ir100slam/install/fairino_description/lib/python3.10/site-packages:/home/zhz/ir100slam/build/controller_node:/home/zhz/ir100slam/install/controller_node/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhz/ir100slam/install/waypoint_generator:/home/zhz/ir100slam/install/so3_quadrotor_simulator:/home/zhz/ir100slam/install/uav_utils:/home/zhz/ir100slam/install/rosmsg_tcp_bridge:/home/zhz/ir100slam/install/ego_planner:/home/zhz/ir100slam/install/bspline_opt:/home/zhz/ir100slam/install/traj_utils:/home/zhz/ir100slam/install/trac_ik:/home/zhz/ir100slam/install/trac_ik_kinematics:/home/zhz/ir100slam/install/trac_ik_examples:/home/zhz/ir100slam/install/trac_ik_lib:/home/zhz/ir100slam/install/so3_control:/home/zhz/ir100slam/install/shelf_dection:/home/zhz/ir100slam/install/robot_base:/home/zhz/ir100slam/install/planning_node:/home/zhz/ir100slam/install/obstacle_node:/home/zhz/ir100slam/install/infinity_slider_hardware:/home/zhz/ir100slam/install/infinity_head_hardware:/home/zhz/ir100slam/install/end_control_node:/home/zhz/ir100slam/install/robot_msgs:/home/zhz/ir100slam/install/realsense2_description:/home/zhz/ir100slam/install/realsense2_camera:/home/zhz/ir100slam/install/realsense2_camera_msgs:/home/zhz/ir100slam/install/poscmd_2_odom:/home/zhz/ir100slam/install/odom_visualization:/home/zhz/ir100slam/install/multi_map_server:/home/zhz/ir100slam/install/local_sensing:/home/zhz/ir100slam/install/quadrotor_msgs:/home/zhz/ir100slam/install/pose_utils:/home/zhz/ir100slam/install/path_searching:/home/zhz/ir100slam/install/plan_env:/home/zhz/ir100slam/install/pgo:/home/zhz/ir100slam/install/navigation:/home/zhz/ir100slam/install/moveit_node:/home/zhz/ir100slam/install/mockamap:/home/zhz/ir100slam/install/map_generator:/home/zhz/ir100slam/install/localizer:/home/zhz/ir100slam/install/livox_converter:/home/zhz/ir100slam/install/fastlio2:/home/zhz/ir100slam/install/livox_ros_driver2:/home/zhz/ir100slam/install/ir100_moveit_node:/home/zhz/ir100slam/install/hba:/home/zhz/ir100slam/install/interface:/home/zhz/ir100slam/install/fairino_hardware:/home/zhz/ir100slam/install/fairino_msgs:/home/zhz/ir100slam/install/drone_detect:/home/zhz/ir100slam/install/cmake_utils:/home/zhz/ir100slam/install/perception_nodes:/home/zhz/ir100slam/install/planning_control:/home/zhz/ir100slam/install/fairino_description:/home/zhz/ir100slam/install/controller_node:/opt/ros/humble')]), 'shell': False}
+[36.507454] (plan_env) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[36.507612] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/lib/libplan_env.so\n'}
+[36.542105] (plan_env) StdoutLine: {'line': b'-- Set runtime path of "/home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/lib/libplan_env.so" to ""\n'}
+[36.542243] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/lib/plan_env/obj_generator\n'}
+[36.545469] (plan_env) StdoutLine: {'line': b'-- Set runtime path of "/home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/lib/plan_env/obj_generator" to ""\n'}
+[36.545553] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/include/plan_env\n'}
+[36.545618] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/include/plan_env/grid_map.h\n'}
+[36.545665] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/include/plan_env/obj_predictor.h\n'}
+[36.545714] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/include/plan_env/raycast.h\n'}
+[36.545757] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/include/plan_env/linear_obj_model.hpp\n'}
+[36.545803] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/library_path.sh\n'}
+[36.545849] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/library_path.dsv\n'}
+[36.545910] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/ament_index/resource_index/package_run_dependencies/plan_env\n'}
+[36.545977] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/ament_index/resource_index/parent_prefix_path/plan_env\n'}
+[36.546026] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/ament_prefix_path.sh\n'}
+[36.546074] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/ament_prefix_path.dsv\n'}
+[36.546119] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/path.sh\n'}
+[36.546168] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/environment/path.dsv\n'}
+[36.546218] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/local_setup.bash\n'}
+[36.546266] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/local_setup.sh\n'}
+[36.546321] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/local_setup.zsh\n'}
+[36.546369] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/local_setup.dsv\n'}
+[36.546416] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/package.dsv\n'}
+[36.546488] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/ament_index/resource_index/packages/plan_env\n'}
+[36.546555] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[36.546608] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[36.546665] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/cmake/plan_envConfig.cmake\n'}
+[36.546708] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/cmake/plan_envConfig-version.cmake\n'}
+[36.546751] (plan_env) StdoutLine: {'line': b'-- Installing: /home/zhz/ir100slam/src/ego/ego-planner-swarm/install/plan_env/share/plan_env/package.xml\n'}
+[36.548128] (plan_env) CommandEnded: {'returncode': 0}
+[36.564743] (plan_env) JobEnded: {'identifier': 'plan_env', 'rc': 0}
+[36.565223] (-) EventReactorShutdown: {}

@@ -32,6 +32,96 @@
 ## 核心组件
 
 ### GridMap类
+这段 `GridMap` 代码其实是把相机（深度图）和点云（“雷达”）分别处理，最终融合成一个“膨胀”了机器人体积的三维占用地图（occupancy grid）。流程可以分成三大步：
+
+---
+
+## 1. 相机 (深度图) → 膨胀地图
+
+1. **同步深度图和位姿**
+
+   * 如果 `pose_type = POSE_STAMPED`，它用 message\_filters 将深度图和 `PoseStamped` 同步；
+   * 如果 `pose_type = ODOMETRY`，则同步深度图和里程计 `/grid_map/odom`。
+
+2. **投影深度像素到 3D** (`projectDepthImage`)
+
+   * 对每个像素 `(u,v)`，根据深度值 `d` 反投影到相机坐标系：
+
+     ```
+     Xc = (u - cx)/fx * d  
+     Yc = (v - cy)/fy * d  
+     Zc = d  
+     ```
+   * 再把 `(Xc,Yc,Zc)` 用相机外参（`camera_r_m_`、`camera_pos_`）变换到世界坐标，存入 `proj_points_`。
+
+3. **射线投影 + 更新 log-odds** (`raycastProcess`)
+
+   * 对每个投影点 `pt_w`，
+
+     * 如果在地图内，就标记为“命中” (`occ=1`)，否则沿着 `camera_pos_→pt_w` 射线剪到边界后标记为“未命中” (`occ=0`)。
+     * 再用一个小的游走射线（RayCaster），在相机和 `pt_w` 之间每隔一个体素步长打一个点，也都当作“空” (`occ=0`)。
+   * 统计每个体素的“命中/未命中”次数，按 log-odds 规则更新 `occupancy_buffer_`。
+
+4. **局部清理 & 膨胀** (`clearAndInflateLocalMap`)
+
+   * 清除离相机一定范围之外的老旧占用信息；
+   * 对所有被判为占用的体素，按设定的膨胀半径 `obstacles_inflation`，把它周围的若干层格子也统一标记为“膨胀占用” (`occupancy_buffer_inflate_ = 1`)；
+   * 在地图上还可以加一个“虚拟天花板”，把超过一定高度的一层全部设为“占用”，以防飞得太高。
+
+---
+
+## 2. 点云 (雷达／LIDAR) → 膨胀地图
+
+1. **订阅点云** (`cloudCallback`)
+
+   * 监听主题 `/grid_map/cloud`（或你 remapping 后的雷达话题），收到了一个完整的点云。
+
+2. **膨胀点云**
+
+   * 把每个点 `(x,y,z)` 首先判断是否在“局部更新范围”内；
+   * 如果在，就对这个点附近按机器人尺寸做一个小立方体膨胀（`inf_step = ceil(obstacles_inflation / resolution)`），将所有这些格子都直接标记为“膨胀占用” (`occupancy_buffer_inflate_`)。
+
+3. **更新局部界限**
+
+   * 同时更新本次点云覆盖到的最小／最大边界，用于后续清理和可视化。
+
+---
+
+## 3. 发布 & 可视化
+
+* `visCallback()` 周期性触发：
+
+  1. `publishMapInflate(true)` 发布膨胀后的占用点云（`occupancy_inflate`）；
+  2. `publishMap()` 发布原始的占用点云（`occupancy`）。
+
+下游或 RViz 订阅这两个话题，就能同时看到“胶囊化”之后的安全飞行／避障地图，以及更精细的原始占用信息。
+
+---
+
+### 整图流程示意（伪代码）
+
+```text
+while (收到深度或点云数据) {
+  if (是深度图帧) {
+    projectDepthImage()       // 深度→3D 点
+    raycastProcess()          // 3D 点 → log-odds 构造占用
+  }
+  if (是点云帧) {
+    for each 点 in 点云:
+      膨胀周围体素 → 标记 occupancy_buffer_inflate_
+  }
+  if (局部区域更新完毕) {
+    clearAndInflateLocalMap() // 膨胀 & 清理
+  }
+}
+
+periodically:
+  publishMap()        // 原始占用点云
+  publishMapInflate() // 膨胀后的点云
+```
+
+这样，深度相机（Vision）用射线投影构建占用概率，雷达／点云直接做占用并膨胀，二者在同一个体素网格中融合，就得到了既能表示“空/占用”概率，又额外标记了“机器人安全半径”的三维膨胀地图。
+
 
 ```cpp
 class GridMap {

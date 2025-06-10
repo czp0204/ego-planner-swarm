@@ -60,8 +60,8 @@ void bsplineCallback(traj_utils::msg::Bspline::ConstPtr msg)
 
   traj_.clear();
   traj_.push_back(pos_traj);
-  traj_.push_back(traj_[0].getDerivative());
-  traj_.push_back(traj_[1].getDerivative());
+  traj_.push_back(traj_[0].getDerivative());//速度
+  traj_.push_back(traj_[1].getDerivative());//加速度
 
   traj_duration_ = traj_[0].getTimeSum();
 
