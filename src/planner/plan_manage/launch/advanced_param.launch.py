@@ -40,8 +40,9 @@ def generate_launch_description():
     point4_x = LaunchConfiguration('point4_x', default=30.0)
     point4_y = LaunchConfiguration('point4_y', default=30.0)
     point4_z = LaunchConfiguration('point4_z', default=1.0)
-
-    flight_type = LaunchConfiguration('flight_type', default=2)
+    # 使用预设的点或者人为rviz去设置
+    flight_type = LaunchConfiguration('flight_type', default=1)
+    
     use_distinctive_trajs = LaunchConfiguration('use_distinctive_trajs', default=True)
     
     obj_num_set = LaunchConfiguration('obj_num_set', default=10)

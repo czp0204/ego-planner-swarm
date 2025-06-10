@@ -9,7 +9,10 @@ def generate_launch_description():
     rviz_config_path = os.path.join(get_package_share_directory('ego_planner'), 'launch', 'default.rviz')
     rviz_node = launch_ros.actions.Node(
             package='rviz2', executable='rviz2', output='screen',
-            arguments=['--display-config', rviz_config_path])
+            arguments=['--display-config', rviz_config_path],
+            remappings=[
+                ('/goal_pose', '/move_base_simple/goal')
+            ])
 
     # 定义 LaunchDescription
     ld = LaunchDescription()
